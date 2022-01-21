@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="box">
+	<h1>{{ today }}</h1>
+    <div style="margin-top: 30px">
+        <a href="{{ url_for('login') }}" class="emoji">⬜</a>
+
+<!--        <a href="{{ url_for('login') }}"><input type="checkbox" id="checkb" style="display: inline; width: fit-content; transform: scale(2)"></a>-->
+        <a href="{{ url_for('login') }}"><input type="text" placeholder="Enter task" style="width: 85%"></a>
+        <a href="{{ url_for('login') }}" class="plus-emoji">➕</a>
+    </div>
+
+</div>
+
+{% endblock %}
